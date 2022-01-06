@@ -17,5 +17,8 @@ public class Money {
         return currency;
     }
     
-    
+    @Override
+    public String toString(){
+        return getAmount() + " " + currency.getSymbol();
+    }
 }
