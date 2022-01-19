@@ -17,8 +17,8 @@ public class MoneyCalculator {
 
     public static void main(String[] args) {
         CurrencyLoader loader = new CurrencyLoaderArchive("currencies.txt");
-        ExchangeRateLoader ex = new ExchangeRateArchive("ExchangeRates.txt");
-        //ExchangeRateLoader ex = new ExchangeRateWebService();
+        //ExchangeRateLoader ex = new ExchangeRateArchive("ExchangeRates.txt");
+        ExchangeRateLoader ex = new ExchangeRateWebService();
         List<Currency> currencies = loader.loadAllCurrencies();
         
         MainFrame mainframe = new MainFrame(currencies, ex);

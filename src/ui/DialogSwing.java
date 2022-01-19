@@ -35,7 +35,7 @@ public class DialogSwing extends JPanel implements Dialog{
     }
     
     private JTextField insertAmount(){
-        JTextField field = new JTextField("0");
+        JTextField field = new JTextField("");
         field.setColumns(5);
         this.insert = field;
         this.insert.addKeyListener(getFinalAmount());
@@ -111,7 +111,9 @@ public class DialogSwing extends JPanel implements Dialog{
                 if (text.equals("")){text = "0";}
                 try{
                     amount = Double.parseDouble(text);
-                    mainframe.refresh();
+                    if(amount >= 0.){
+                        mainframe.refresh();
+                    }
                 }catch(NumberFormatException e){}
                 
             }
