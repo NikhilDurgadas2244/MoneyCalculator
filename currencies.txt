@@ -1,3 +1,27 @@
 USD,Dolar USA,$
 CAD,Dolar Canada,$
 EUR,Euro,€
+ALL,Albania Lek,Lek
+AFN,Afghanistan Afghani,؋
+ARS,Argentina Peso,$
+AWG,Aruba Guilder,ƒ
+AUD,Australia Dollar,$
+BRL,Brazil Real,R$
+CNY,China Yuan Renminbi,¥
+COP,Colombia Peso,$
+HRK,Croatia Kuna,kn
+CUP,Cuba Peso,₱
+HKD,Hong Kong Dollar,$
+INR,India Rupee,₹
+JPY,Japan Yen,¥
+KRW,Korea (South) Won,₩
+QAR,Qatar Riyal,﷼
+RUB,Russia Ruble,₽
+LKR,Sri Lanka Rupee,₨
+SEK,Sweden Krona,kr
+CHF,Switzerland Franc,CHF
+THB,Thailand Baht,฿
+TRY,Turkey Lira,₺
+GBP,United Kingdom Pound,£
+VEF,Venezuela Bolívar,Bs
+ZWD,Zimbabwe Dollar,Z$

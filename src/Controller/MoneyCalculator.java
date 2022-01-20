@@ -16,9 +16,15 @@ public class MoneyCalculator {
     
 
     public static void main(String[] args) {
-        CurrencyLoader loader = new CurrencyLoaderArchive("currencies.txt");
+        //PARA HACER UNA PRUEBA DE FUNCIONAMIENTO DE LOS EXCHANGE RATES CREADOS DESCOMENTAR LAS DOS LÍNEAS DE CODIGO A CONTINUACIÓN 
+        //Y COMENTAR LAS OTRAS DOS QUE LE SIGUEN
+        
+        //CurrencyLoader loader = new CurrencyLoaderArchive("currencies_prueba_local.txt");
         //ExchangeRateLoader ex = new ExchangeRateArchive("ExchangeRates.txt");
+
+        CurrencyLoader loader = new CurrencyLoaderArchive("currencies.txt");
         ExchangeRateLoader ex = new ExchangeRateWebService();
+
         List<Currency> currencies = loader.loadAllCurrencies();
         
         MainFrame mainframe = new MainFrame(currencies, ex);
